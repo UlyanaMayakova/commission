@@ -10,8 +10,7 @@ fun main() {
         val amount: Int = readLine()!!.toInt() * 100
 
         if (amount >= minimalSum) {
-            val userCommissionKopeyki = ((amount * commission).roundToInt())
-            userCommission = userCommissionKopeyki.toDouble() / 100
+            userCommission  = (amount * commission).roundToInt().toDouble() / 100
             println("Сумма комиссии $userCommission рублей")
             break
         } else {
